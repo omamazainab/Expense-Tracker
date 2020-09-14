@@ -17,7 +17,7 @@ const Balance = () => {
   return (
     <div className="text-center">
       <h6 className="heading balance_title">Balance</h6>
-      <h3 className="heading balance">${balance}</h3>
+  <h3 className="heading balance">{balance<0? '-' : ''} ${Math.abs(balance)}</h3>
     </div>
   );
 };

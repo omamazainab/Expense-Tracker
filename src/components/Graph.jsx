@@ -38,11 +38,7 @@ const Graph = () => {
                                     'green',
                                     'red'
                                     ],
-                                    // hoverBackgroundColor: [
-                                    // '#228B22',
-                                    // '#8B0000',
-                                    // '#008080'
-                                    // ],
+                                   
                                     borderWidth: 0
                                 }]
                             }} />

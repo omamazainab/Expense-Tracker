@@ -45,3 +45,18 @@
     border: transparent;
     
 }
+
+.transaction-title{
+  font-weight: 700;
+}
+
+.transaction-amount{
+  font-size: small;
+}
+
+.trans-des{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}

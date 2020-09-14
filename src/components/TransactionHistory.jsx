@@ -28,7 +28,7 @@ const TransactionHistory = () => {
                   : "historylist-item plus"
               }
             >
-              <span className="trans-des">{transaction.text} | {transaction.amount}</span>
+              <div className="trans-des"><span className="transaction-title">{transaction.text} </span> <span className="transaction-amount">${transaction.amount}</span></div>
               <button
                 className="del-btn"
                 onClick={() => {
