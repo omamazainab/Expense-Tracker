@@ -35,3 +35,4 @@ yarn start
 4. local storage of transactions
 5. making this app progressive
 6. adding notification functionality
+7. adding proper logo 
