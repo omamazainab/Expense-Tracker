@@ -22,3 +22,16 @@ to start this project locally use this command
 ```
 yarn start
 ```
+### Functionalities
+1. Add expense and Income
+2. See total balance 
+3. track expenses and income using history option
+4. delete transactions
+
+### Functionalites to be added
+1. edit transactions
+2. overflow in transaction history
+3. proper alert on wrong input 
+4. local storage of transactions
+5. making this app progressive
+6. adding notification functionality
