@@ -1,5 +1,6 @@
 .graph-container{
     margin: 16px;
+    margin-bottom: 0;
     background-color: rgb(20 20 41 / 60%)!important;
     display: flex;
     padding: 0px 16px;
@@ -11,4 +12,14 @@
     color: white;
     margin: .5rem 0;
     cursor: pointer;
+}
+
+.collapseGraph{
+    margin: 16px;
+    margin-top: 0;
+    background-color: white;
+}
+
+.pie-chart{
+    padding: 16px;
 }
