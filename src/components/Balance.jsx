@@ -8,9 +8,9 @@ const Balance = () => {
 
   useEffect(() => {
     let sum = 0;
-    transactions.map((transaction) => {
-      sum += transaction.amount;
-    });
+    transactions.map(transaction => 
+      sum += transaction.amount
+    );
     setBalance(sum);
   }, [transactions]);
 
