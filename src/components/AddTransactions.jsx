@@ -56,7 +56,6 @@ const AddTransactions = () => {
             }}
           />
         </div>
-        <hr />
         <div className="amount-container">
           <input
             id="amount"
