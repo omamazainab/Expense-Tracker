@@ -12,11 +12,11 @@ const TransactionHistory = () => {
             <div className="transaction-history-container" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseHistory" href="#collapseHistory">
            <p className="Trans-history-title"> Transaction History</p>
         </div>
-        <div id="collapseHistory" class="collapse">
+        <div id="collapseHistory" className="collapse">
             <ul>
                {
                   transactions.map(transaction=>(
-                     <li>{transaction.text}</li>
+                  <li key={transaction.id}>{transaction.text} | {transaction.amount}</li>
                   ))
                }
             </ul>

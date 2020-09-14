@@ -7,12 +7,17 @@ const AddTransactions = () => {
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
 
-  const { addTransaction } = useContext(globalContext);
+  
+
+  const { addTransaction,transactions } = useContext(globalContext);
 
   const addIncome = (e) => {
+    e.preventDefault();
     if (amount <= 0) {
       alert("amount should be greater than 0");
     } else {
+
+        
       const newTransaction = {
         id: idGenerator,
         text: description,
@@ -23,14 +28,31 @@ const AddTransactions = () => {
     }
   };
 
-  const addExpense = (e) => {};
+  const addExpense = (e) => {
+    e.preventDefault();
+    e.preventDefault();
+    if (amount <= 0) {
+      alert("amount should be greater than 0");
+    } else {
+
+        
+      const newTransaction = {
+        id: idGenerator,
+        text: description,
+        amount: -amount,
+      };
+
+      addTransaction(newTransaction);
+    }
+  };
 
   return (
-    <form>
+    <form  name="myform" id="myform">
       <div className="input-container">
         <h6 className="add-trans-title">Add Transaction</h6>
         <div className="desc-container">
           <input
+          id="description"
             type="text"
             placeholder="Description *"
             value={description}
@@ -42,6 +64,7 @@ const AddTransactions = () => {
         <hr />
         <div className="amount-container">
           <input
+          id="amount"
             type="number"
             placeholder="Amount *"
             min="0"
@@ -54,7 +77,7 @@ const AddTransactions = () => {
       </div>
       <div className="btn-container">
         <button className="btn income-btn " onClick={addIncome}>Add Income</button>
-        <button className="btn expense-btn">Add Expense</button>
+        <button className="btn expense-btn" onClick={addExpense}>Add Expense</button>
       </div>
     </form>
   );

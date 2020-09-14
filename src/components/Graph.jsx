@@ -7,7 +7,7 @@ const Graph = () => {
       <div className="graph-container"  data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" href="#collapseGraph">
         <p className="graph-title" > Transaction Graph</p>
       </div>
-      <div id="collapseGraph" class="collapse">
+      <div id="collapseGraph" className="collapse">
         
       </div>
     </div>

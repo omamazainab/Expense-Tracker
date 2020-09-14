@@ -7,20 +7,23 @@ import IncomeExpense from './components/IncomeExpense';
 import TransactionHistory from './components/TransactionHistory';
 import Graph from './components/Graph';
 import AddTransaction from './components/AddTransactions'
+import { GlobalProvider } from './context/GlobalState';
 
 
 function App() {
   return (
-    <div className="App">
-      <div className="expense-tracker">
-        <Header />
-        <Balance />
-        <IncomeExpense />
-        <TransactionHistory />
-        <Graph />
-        <AddTransaction />
+    <GlobalProvider>
+      <div className="App">
+        <div className="expense-tracker">
+          <Header />
+          <Balance />
+          <IncomeExpense />
+          <TransactionHistory />
+          <Graph />
+          <AddTransaction />
+        </div>
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 

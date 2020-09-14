@@ -19,11 +19,11 @@ export const GlobalProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
-    function addTransaction(transaction) {
+    function addTransaction(transaction){
         dispatch({
             type: 'ADD_TRANSACTION',
             payload: transaction
-        })
+        });
     }
 
     return (
