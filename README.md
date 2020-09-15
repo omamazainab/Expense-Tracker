@@ -36,3 +36,4 @@ yarn start
 5. making this app progressive
 6. adding notification functionality
 7. adding proper logo 
+8. adding count up 
