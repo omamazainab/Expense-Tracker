@@ -37,3 +37,6 @@ yarn start
 6. adding notification functionality
 7. adding proper logo 
 8. adding count up 
+
+### Problems 
+1. expense and income not working 
